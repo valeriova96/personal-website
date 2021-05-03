@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.upper-bar-navigation-container {
+  background-color: #fff;
+  width: 100%;
+  min-height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #b3b3b3;
+  position: fixed;
+  /*border: 1px solid red;*/
+  z-index: 1;
+}
+
+.upper-bar-name {
+  color: #737373;
+  font-size: 40px;
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+
+.upper-bar-name a:visited {
+  color: #737373;
+}
+
+.upper-bar-name a:hover {
+  color: #008ae6;
+}
+
+.navigation-list {
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 15%;
+  height: 8vh;
+  justify-content: space-around;
+  align-items: center;
+  /*border: 1px solid red;*/
+}
+
+.navigation-list li {
+  display: flex;
+  align-items: center;
+  /*border: 1px solid red;*/
+  height: 8vh;
+  width: 100%;
+}
+
+.navigation-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 18px;
+  height: 7.7vh;
+  width: 100%;
+  /*border: 1px solid red;*/
+}
+
+.resume {
+  color: #737373;
+}
+
+.resume:hover {
+  background-color: #e6f5ff;
+  color: #008ae6;
+  box-shadow: 0 2px 0 #33adff;
+  text-decoration: none;
+}
+
+.proj {
+  color: #008ae6;
+  box-shadow: 0 2px 0 #33adff;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 30px;
+  height: 3px;
+  background: #737373;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+
+.hamburger {
+  display: none;
+}
+
+.intro-project-container {
+  /*border: 1px solid red;*/
+  height: 60vh;
+  width: 100%;
+  background-color: #edf3f8;
+  border-bottom: 1px solid #b3b3b3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro-project-container h2 {
+  font-size: 45px;
+}
+
+.intro-project-container p {
+  font-size: 25px;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+  .navigation-list {
+    width: 35%;
+  }
+  .intro-project-container h2 {
+    font-size: 35px;
+  }
+
+  .intro-project-container p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 981px) and (max-width: 1500px) {
+  .navigation-list {
+    width: 20%;
+  }
+  .intro-project-container h2 {
+    font-size: 35px;
+  }
+
+  .intro-project-container p {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+  }
+
+  .navigation-list {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #e6f5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+
+  .navigation-list li {
+    opacity: 0;
+    margin-top: 150px;
+  }
+
+  .navigation-list a {
+    color: #008ae6;
+  }
+
+  .navigation-list a:hover {
+    box-shadow: none;
+    text-decoration: underline;
+  }
+
+  .navigation-list a:active {
+    color: mediumblue;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .intro-project-container {
+    text-align: center;
+  }
+
+  .intro-project-container h2 {
+    font-size: 35px;
+  }
+
+  .intro-project-container p {
+    font-size: 20px;
+  }
+
+  .intro-project-container h2,
+  .intro-project-container p {
+    width: 88%;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navListFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
