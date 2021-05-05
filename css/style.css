@@ -41,7 +41,7 @@ a:visited {
 
 .upper-bar-name {
   color: #737373;
-  font-size: 40px;
+  font-size: 36px;
   margin-left: 15px;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -213,7 +213,6 @@ a:visited {
 
 .contact-list {
   display: block;
-  line-height: 8.5em;
 }
 
 .contact-list:first-of-type {
@@ -222,8 +221,8 @@ a:visited {
 
 .contact-element {
   /*border: 1px solid red;*/
-  width: 15vh;
-  height: 15vh;
+  width: 10vh;
+  height: 10vh;
 
   display: flex;
   align-items: center;
@@ -235,6 +234,7 @@ a:visited {
   width: 7vh;
   height: 7vh;
 }
+
 footer {
   /*border: 1px solid red;*/
   width: 100%;
@@ -321,6 +321,10 @@ footer {
     position: relative;
   }
 
+  .upper-bar-name {
+    font-size: 20px;
+  }
+
   .hamburger {
     position: absolute;
     cursor: pointer;
@@ -332,8 +336,8 @@ footer {
   .navigation-list {
     position: absolute;
     right: 0px;
-    margin-top: 1.5px;
-    height: 92vh;
+    margin-top: -2.5px;
+    height: 30vh;
     top: 8vh;
     background-color: #e6f5ff;
     display: flex;
