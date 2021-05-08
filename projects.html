@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <style>
       .upper-bar-name {
         font-family: "Noto Sans", sans-serif;
@@ -21,6 +25,10 @@
       .intro-project-container p {
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
+      }
+      .project-item h3,
+      .project-item p {
+        font-family: "Roboto Slab", serif;
       }
     </style>
   </head>
@@ -44,27 +52,111 @@
     <div class="intro-project-container">
       <h2>PROJECTS</h2>
       <p>
-        This section is about my projects, they're really cool, check it out!
+        Here you can find projects that I developed. They range over many
+        programming languages, from HTML to Python. Check them out!
       </p>
     </div>
     <div class="projects-list-container">
       <ul class="projects-list">
-        <li>
-          <img class="proj-img" src="images/iceice.jpg" />
+        <li class="project-item">
+          <img
+            class="project-item-img"
+            alt="machine learning project screen"
+            src="images/ml1.jpg"
+          />
           <div class="proj-text">
-            <h3><a href="https://youtu.be/2gVfjuNw8AA" target="_blank">
-              Iceberg Jump</h3></a>
+            <h3>
+              <a
+                href="https://github.com/valeriova96/Machine-Learning/tree/main/homework1"
+                target="_blank"
+                >SVM and ID3</a
+              >
+            </h3>
             <p>
-              Iceberg Jump is an arcade mobile multiplatform game developed with
-              Corona tools and Lua langauge. It can be classified as an endless
-              run. The user goal, then is trying to collect the highest possible
-              score, enhancing it by collecting delicious icecreams!
+              A project developed for the Machine Learning course. We were given
+              a dataset containing a lot of different functions written as a
+              Json file. Our goal was to develop a classification algorithm
+              tailored on a part of such dataset. In order to achieve the
+              objective I took advantage of ID3 and SVMs. I used Python language
+              within the Google Colab environment and many ML famous libraries
+              such as TensorFlow, SickitLearn, Pandas, and many others.
             </p>
           </div>
         </li>
-        <li>Proj2</li>
-        <li>Proj3</li>
-        <li>Proj4</li>
+        <li class="project-item">
+          <img
+            class="project-item-img"
+            alt="machine learning project screen"
+            src="images/ml2.jpg"
+          />
+          <div class="proj-text">
+            <h3>
+              <a
+                href="https://github.com/valeriova96/Machine-Learning/tree/main/homework%202"
+                target="_blank"
+                >CNN</a
+              >
+            </h3>
+            <p>
+              Another project developed for the Machine Learning course. Here we
+              were given a dataset containing images of typical stuff that can
+              be found in a domestic environment (juice cartons, glasses of
+              water, plastic food containers, ...). We had to build up a
+              Convolutional Neural Network able to recognize new samples of such
+              categories. I used the same language, environment and ,more or
+              less, the same libraries of the project above.
+            </p>
+          </div>
+        </li>
+        <li class="project-item">
+          <a
+            class="project-item-img-link"
+            href="https://youtu.be/2gVfjuNw8AA"
+            target="_blank"
+          >
+            <img alt="iceberg jump screen" src="images/ice2.jpg" />
+          </a>
+          <div class="proj-text">
+            <h3>
+              <a
+                href="https://github.com/valeriova96/Iceberg-Jump"
+                target="_blank"
+                >Iceberg Jump</a
+              >
+            </h3>
+            <p>
+              Iceberg Jump is a mobile multiplatform game developed with Corona
+              tool and Lua langauge. It can be classified as an endless run. The
+              user goal then, is trying to collect the highest possible score.
+              It can be also achieved by collecting delicious ice-creams! (If
+              you want to watch a demo, click the image on the left).
+            </p>
+          </div>
+        </li>
+        <li class="project-item">
+          <img
+            class="project-item-img"
+            alt="a screen of my website code"
+            src="images/website.jpg"
+          />
+          <div class="proj-text">
+            <h3>
+              <a
+                href="https://github.com/valeriova96/personal-website"
+                target="_blank"
+                >My own website</a
+              >
+            </h3>
+            <p>
+              This whole website you're visiting now is created with my bare
+              hands. I writed every single line of code, spaced every block,
+              text and image that you can find here. The job has been
+              accomplished by using the saint web-developer trinity: HTML, CSS
+              and a pinch of JavaScript
+            </p>
+          </div>
+        </li>
+        <li>Many others are coming</li>
       </ul>
     </div>
     <footer>

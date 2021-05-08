@@ -54,7 +54,7 @@ a:visited {
 .navigation-list {
   /*border: 1px solid red;*/
   display: flex;
-  width: 15%;
+  width: 16%;
   height: 8vh;
   justify-content: space-around;
   align-items: center;
@@ -156,7 +156,7 @@ a:visited {
 }
 
 .figure-link-element:active {
-  color: mediumblue;
+  color: #0268ac;
 }
 
 .about-contact-container {
@@ -298,7 +298,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 981px) and (max-width: 1500px) {
+@media only screen and (min-width: 981px) and (max-width: 1200px) {
   .navigation-list {
     width: 20%;
   }
@@ -348,13 +348,14 @@ footer {
     transform: translateX(100%);
     transition: 0.5s ease-in;
     border-top: 1px solid #b3b3b3;
-    border-left: 1px solid #b3b3b3;
+    /*border-left: 1px solid #b3b3b3;*/
   }
 
   .navigation-list li {
     opacity: 0;
     height: 15vh;
     border-bottom: 1px solid black;
+    border-left: 1px solid black;
 
     justify-content: center;
     align-items: center;
