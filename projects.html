@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Valerio - Projects</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/projects.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Always include this meta below to ensure proper mobile render -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS file -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      .upper-bar-name {
-        font-family: "Noto Sans", sans-serif;
-      }
-      .intro-project-container h2,
-      .intro-project-container p {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-      }
-      .project-item h3,
-      .project-item p {
-        font-family: "Roboto Slab", serif;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Projects</title>
   </head>
   <body>
-    <nav class="upper-bar-navigation-container">
-      <h1 class="upper-bar-name">
-        <a href="index.html">Valerio Valente</a>
-      </h1>
-      <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid attempt">
+        <a href="index.html" class="navbar-brand text-uppercase"
+          >Valerio Valente</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="projects.html" class="nav-link active">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Resume</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="navigation-list">
-        <li>
-          <a class="upper-bar-element proj" href="projects.html">Projects</a>
-        </li>
-        <li><a class="upper-bar-element resume" href="#">Resume</a></li>
-      </ul>
     </nav>
-    <div class="intro-project-container">
-      <h2>PROJECTS</h2>
-      <p>
-        Here you can find projects that I developed. They range over many
-        programming languages, from HTML to Python. Check them out!
-      </p>
+    <!-- WELCOME SECTION -->
+    <div class="container-fluid">
+      <div class="row jumbotron d-flex justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="display-6">Projects</h2>
+          <p class="lead">
+            Here you can find projects that I developed. They range over many
+            programming languages, from HTML to Python. Check them out!
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="projects-list-container">
-      <ul class="projects-list">
-        <li class="project-item">
-          <img
-            class="project-item-img"
-            alt="machine learning project screen"
-            src="images/ml1.jpg"
-          />
-          <div class="proj-text">
+    <!-- PROJECT LIST SECTION -->
+    <div class="container-fluid padding projects">
+      <div class="row padding proj-container">
+        <div class="col-12 proj-item row padding">
+          <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 proj-img">
+            <img
+              class="proj-item-img"
+              alt="machine learning project screen"
+              src="images/ml1.jpg"
+            />
+          </div>
+          <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8 proj-text">
             <h3>
               <a
                 href="https://github.com/valeriova96/Machine-Learning/tree/main/homework1"
@@ -77,19 +77,29 @@
               a dataset containing a lot of different functions written as a
               Json file. Our goal was to develop a classification algorithm
               tailored on a part of such dataset. In order to achieve the
-              objective I took advantage of ID3 and SVMs. I used Python language
-              within the Google Colab environment and many ML famous libraries
-              such as TensorFlow, SickitLearn, Pandas, and many others.
+              objective I took advantage of ID3 and SVMs. I used
+              <a href="https://www.python.org/" target="_blank"
+                ><b>Python</b></a
+              >
+              language within the Google Colab environment and many ML famous
+              libraries such as
+              <a href="https://pandas.pydata.org/" target="_blank"
+                ><b>Pandas</b></a
+              >
+              and <a href="https://numpy.org/" target="_blank"><b>NumPy</b></a
+              >.
             </p>
           </div>
-        </li>
-        <li class="project-item">
-          <img
-            class="project-item-img"
-            alt="machine learning project screen"
-            src="images/ml2.jpg"
-          />
-          <div class="proj-text">
+        </div>
+        <div class="col-12 proj-item row">
+          <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 proj-img">
+            <img
+              class="proj-item-img"
+              alt="machine learning project screen"
+              src="images/ml2.jpg"
+            />
+          </div>
+          <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8 proj-text">
             <h3>
               <a
                 href="https://github.com/valeriova96/Machine-Learning/tree/main/homework%202"
@@ -103,20 +113,32 @@
               be found in a domestic environment (juice cartons, glasses of
               water, plastic food containers, ...). We had to build up a
               Convolutional Neural Network able to recognize new samples of such
-              categories. I used the same language, environment and ,more or
-              less, the same libraries of the project above.
+              categories. Here I adopted
+              <a href="https://www.tensorflow.org/" target="_blank"
+                ><b>Tensorflow</b></a
+              >
+              and
+              <a href="https://scikit-learn.org/stable/" target="_blank"
+                ><b>Sikit-Learn</b></a
+              >.
             </p>
           </div>
-        </li>
-        <li class="project-item">
-          <a
-            class="project-item-img-link"
-            href="https://youtu.be/2gVfjuNw8AA"
-            target="_blank"
-          >
-            <img alt="iceberg jump screen" src="images/ice2.jpg" />
-          </a>
-          <div class="proj-text">
+        </div>
+        <div class="col-12 proj-item row">
+          <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 proj-img">
+            <a
+              class="proj-item-img-link"
+              href="https://youtu.be/2gVfjuNw8AA"
+              target="_blank"
+            >
+              <img
+                class="proj-item-img"
+                alt="iceberg jump screen"
+                src="images/ice2.jpg"
+              />
+            </a>
+          </div>
+          <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8 proj-text">
             <h3>
               <a
                 href="https://github.com/valeriova96/Iceberg-Jump"
@@ -125,21 +147,33 @@
               >
             </h3>
             <p>
-              Iceberg Jump is a mobile multiplatform game developed with Corona
-              tool and Lua langauge. It can be classified as an endless run. The
-              user goal then, is trying to collect the highest possible score.
-              It can be also achieved by collecting delicious ice-creams! (If
-              you want to watch a demo, click the image on the left).
+              Iceberg Jump is a mobile multiplatform game developed with
+              <a href="https://coronalabs.com/" target="_blank"
+                ><b>Corona</b></a
+              >
+              tool and
+              <a href="http://www.lua.org/" target="_blank"><b>Lua</b></a>
+              langauge by collaborating with my friend and colleague
+              <a
+                href="https://www.linkedin.com/in/gabriele-de-stradis-172173174"
+                target="_blank"
+                ><em>Gabriele</em></a
+              >. It can be classified as an endless run. The user's goal then,
+              is trying to collect the highest possible score. It can be also
+              achieved by collecting delicious ice-creams! (If you want to watch
+              a demo, click the image on the left).
             </p>
           </div>
-        </li>
-        <li class="project-item">
-          <img
-            class="project-item-img"
-            alt="a screen of my website code"
-            src="images/website.jpg"
-          />
-          <div class="proj-text">
+        </div>
+        <div class="col-12 proj-item row">
+          <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 proj-img">
+            <img
+              class="proj-item-img"
+              alt="a screen of my website code"
+              src="images/website.jpg"
+            />
+          </div>
+          <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8 proj-text">
             <h3>
               <a
                 href="https://github.com/valeriova96/personal-website"
@@ -148,20 +182,44 @@
               >
             </h3>
             <p>
-              This whole website you're visiting now is created with my bare
+              This whole website you're visiting now, was created with my bare
               hands. I writed every single line of code, spaced every block,
               text and image that you can find here. The job has been
-              accomplished by using the saint web-developer trinity: HTML, CSS
-              and a pinch of JavaScript
+              accomplished by using many web-developers' holy tools, like
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+                target="_blank"
+                ><b>HTML</b></a
+              >,
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+                ><b>CSS</b></a
+              >
+              and
+              <a href="https://getbootstrap.com/" target="_blank"
+                ><b>Bootstrap</b></a
+              >.
             </p>
           </div>
-        </li>
-        <li>Many others are coming</li>
-      </ul>
+        </div>
+      </div>
     </div>
+    <!-- FOOTER -->
     <footer>
-      <p>&copy; 2021 Valerio Valente</p>
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-12">
+            <hr class="light" />
+            <h5>&copy; 2021 Valerio Valente</h5>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
